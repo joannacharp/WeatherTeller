@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeatherTeller.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#0000AA" Padding="30" CornerRadius="0">
+            <Label Text="Welcome to WeatherTeller!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" BackgroundColor="#0xAAFF0000"/>
+        </Frame>
+        <Label FontSize="16" Padding="30,24,30,50">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="You can search the current weather in " FontSize="20"/>
+                        <Span Text="any " FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="location by writing the " FontSize="20"/>
+                        <Span Text="location's name (city or country) " FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="in the box below  " FontSize="20"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <Entry x:Name="city" HorizontalOptions="FillAndExpand" VerticalOptions="Fill" Margin="20" > </Entry>
+        <Button x:Name="searchButton" Text="search" HorizontalOptions="Center" VerticalOptions="Center" Clicked="searchButtonClicked"/>
+    </StackLayout>
+
+</ContentPage>

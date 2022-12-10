@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeatherTeller.WeatherPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#0000AA" Padding="30" CornerRadius="0">
+                <Label x:Name="labelResult" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" BackgroundColor="#0xAAFF0000"/>
+            </Frame>
+            <Label x:Name="mainWeather" FontSize="20" Padding="20,0,0,0"/>
+            <Label x:Name="description" FontSize="20" Padding="20,0,0,0"/>
+            <Label x:Name="degrees" FontSize="20" Padding="20,0,0,0"/>
+            <Label x:Name="feelsLike" FontSize="20" Padding="20,0,0,0"/>
+            <Label x:Name="tempMin" FontSize="20" Padding="20,0,0,0"/>
+            <Label x:Name="tempMax" FontSize="20" Padding="20,0,0,0"/>
+            <Label x:Name="pressure" FontSize="20" Padding="20,0,0,0"/>
+            <Label x:Name="humidity" FontSize="20" Padding="20,0,0,0"/>
+            <Label x:Name="wind" FontSize="20" Padding="20,0,0,0"/>
+            <Label x:Name="clouds" FontSize="20" Padding="20,0,0,50"/>
+            <Label x:Name="date" FontSize="20" Padding="20,0,0,50"/>
+            <Button x:Name="refreshButton" Text="refresh" HorizontalOptions="Center" VerticalOptions="Center" Clicked="refreshButtonClicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
